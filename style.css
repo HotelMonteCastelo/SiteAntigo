@@ -1,6 +1,7 @@
 header nav {
     background-color: #222;
-    height: 70px;
+    min-height: 9.2vh;
+    max-height: 155px;
     display: flex;
     flex-direction: row;
     color: white;
