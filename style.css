@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 header nav {
     background-color: #222;
     min-height: 9.2vh;
@@ -5,5 +9,28 @@ header nav {
     display: flex;
     flex-direction: row;
     color: white;
+    overflow: visible;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    border: 1px solid blue;
 }
 
+header nav > * {
+    border: 1px solid red;
+}
+
+.small-logo {
+    display: none;
+}
+
+.menu-controller {
+    
+}
+
+.website-shortcuts {
+    display: flex;
+    flex-direction: column;
+    transform:translateY(100%);
+    background-color: #222;
+}
