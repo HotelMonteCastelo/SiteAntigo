@@ -1,36 +1,49 @@
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 header nav {
     background-color: #222;
-    min-height: 9.2vh;
-    max-height: 155px;
+    height: 12vh;
     display: flex;
     flex-direction: row;
     color: white;
     overflow: visible;
-    align-items: center;
     justify-content: flex-end;
     width: 100%;
-    border: 1px solid blue;
+    position: fixed;
 }
 
 header nav > * {
-    border: 1px solid red;
+
 }
 
 .small-logo {
     display: none;
 }
 
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .menu-controller {
-    
+    cursor: pointer;
+    padding: 0 10px;
+    height: 8h;
+    margin: 2vh;
+    line-height: 8vh;
+    border-radius: 4px;
+}
+
+.menu-controller:hover,
+.menu-controller:focus {
+    background-color: rgb(50, 50, 50);
 }
 
 .website-shortcuts {
     display: flex;
     flex-direction: column;
-    transform:translateY(100%);
     background-color: #222;
 }
