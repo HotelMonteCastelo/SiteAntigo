@@ -54,7 +54,7 @@ header nav {
     display: flex;
     flex-direction: column;
     background-color: #222;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
