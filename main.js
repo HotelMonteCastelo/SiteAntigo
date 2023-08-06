@@ -3,10 +3,20 @@ const websiteShortcuts = document.querySelector('.website-shortcuts')
 
 
 menuController.addEventListener('click', ()=>{
-    if (websiteShortcuts.classList.contains('hidden')) {
-        websiteShortcuts.classList.remove('hidden')
+    websiteShortcuts.classList.contains('hidden') ? showMenu() : hideMenu()
     }
-    else {
-        websiteShortcuts.classList.add('hidden')
-    }
+)
+
+window.addEventListener('resize', ()=>{
+    window.innerWidth > 800 ? showMenu() : hideMenu()
 })
+
+function showMenu() {
+    websiteShortcuts.classList.remove('hidden')
+    menuController.textContent = 'X'
+}
+
+function hideMenu () {
+    websiteShortcuts.classList.add('hidden')
+    menuController.textContent = 'MENU'
+}
