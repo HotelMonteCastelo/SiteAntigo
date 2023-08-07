@@ -13,7 +13,7 @@ header nav {
     width: 100%;
     position: fixed;
 
-    gap: 30px;
+    gap: 1.875rem;
     font-weight: 300;
     border-bottom: 1px solid black;
 }
@@ -21,7 +21,7 @@ header nav {
 .small-logo {
     display: none;
     height: 40px;
-    margin-left: 105px;
+    margin-left: 6.563rem;
     margin-bottom: 2px;
 }
 
@@ -55,13 +55,22 @@ header nav {
     background-color: #222;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
-    gap: 20px;
+    padding: 1.25rem;
+    gap: 1.25rem;
+    transition: 0.2s;
+}
+
+.visible-menu-options {
+    transform: translateX(0);
+}
+
+.hidden-menu-options {
+    transform: translateX(100%);
 }
 
 .book-and-rates {
     display: flex;
-    gap: 15px;
+    gap: 0.938rem;
 }
 
 .rate-on-request {
@@ -87,7 +96,7 @@ header nav {
     font-style: italic;
     font-weight: 400;
     text-shadow: 1px 1px 1px black;
-    gap: 20px;
+    gap: 1.25rem;
     padding: 20vh 22vw;
     text-align: center;
     line-height: 2.5rem;
