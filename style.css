@@ -83,7 +83,7 @@ header nav {
 }
 
 .welcome-container {
-    background-image: url('/images/welcome-background.jpg');
+    background-image: url('./images/welcome-background.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center;
