@@ -1,36 +1,111 @@
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 header nav {
     background-color: #222;
-    min-height: 9.2vh;
-    max-height: 155px;
+    height: 12vh;
     display: flex;
     flex-direction: row;
     color: white;
-    overflow: visible;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
     width: 100%;
-    border: 1px solid blue;
-}
+    position: fixed;
 
-header nav > * {
-    border: 1px solid red;
+    gap: 30px;
+    font-weight: 300;
+    border-bottom: 1px solid black;
 }
 
 .small-logo {
     display: none;
+    height: 40px;
+    margin-left: 105px;
+    margin-bottom: 2px;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+    align-self: flex-start;
 }
 
 .menu-controller {
-    
+    cursor: pointer;
+    padding: 0 10px;
+    height: 8vh;
+    min-width: 49px;
+    text-align: center;
+    margin: 2vh;
+    line-height: 8vh;
+    border-radius: 4px;
+    align-self: flex-end;
+}
+
+.menu-controller:hover,
+.menu-controller:focus {
+    background-color: rgb(50, 50, 50);
 }
 
 .website-shortcuts {
     display: flex;
     flex-direction: column;
-    transform:translateY(100%);
     background-color: #222;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.book-and-rates {
+    display: flex;
+    gap: 15px;
+}
+
+.rate-on-request {
+    color: #999;
+    transition: 0.1s;
+}
+
+.rate-on-request:hover {
+    color: white;
+}
+
+.welcome-container {
+    background-image: url('/images/welcome-background.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-style: italic;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px black;
+    gap: 20px;
+    padding: 20vh 22vw;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.main-logo {
+    height: 86px;
+    object-fit: contain;
+    margin-bottom: 35px;
+}
+
+.welcome-container p {
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+}
+
+.welcome-title {
+    font-size: 2.188rem;
+    font-weight: inherit;
+    letter-spacing: 0.125rem;
 }

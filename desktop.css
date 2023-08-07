@@ -1,5 +1,37 @@
-@media (min-width: 576px) {
+@media (min-width: 800px) {
+
+    header nav {
+        justify-content: flex-start;
+    }
+
+    .small-logo {
+        display: block;
+    }
+
+    .menu-container {
+        align-self: center;
+    }
+
+    .menu-controller {
+        display: none;
+    }
+
     .website-shortcuts {
-        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .website-shortcuts,
+    .book-and-rates {
+        gap: 30px;
+    }
+}
+
+@media (min-width: 576px) {
+    .welcome-container {
+        
     }
 }
