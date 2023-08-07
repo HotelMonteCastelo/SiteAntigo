@@ -1,3 +1,22 @@
+@keyframes reveal-menu {
+    from {
+        transform: translateX(100%)
+    }
+    to {
+        transform: translateX(0)
+    }
+}
+
+@keyframes hide-menu {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(100%)
+    }
+}
+
+
 .hidden {
     display: none !important;
 }
@@ -58,6 +77,21 @@ header nav {
     padding: 20px;
     gap: 20px;
 }
+
+.revealed-menu-options {
+    animation-name: reveal-menu;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.hidden-menu-options {
+    animation-name: hide-menu;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
 
 .book-and-rates {
     display: flex;
