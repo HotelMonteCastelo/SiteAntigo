@@ -18,6 +18,20 @@
 
     .website-shortcuts {
         flex-direction: row;
+        gap: 15px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .website-shortcuts,
+    .book-and-rates {
         gap: 30px;
+    }
+}
+
+@media (min-width: 576px) {
+    .welcome-container {
+        
     }
 }

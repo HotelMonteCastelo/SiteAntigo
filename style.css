@@ -23,7 +23,6 @@ header nav {
     height: 40px;
     margin-left: 105px;
     margin-bottom: 2px;
-    object-fit: contain;
 }
 
 .menu-container {
@@ -54,13 +53,15 @@ header nav {
     display: flex;
     flex-direction: column;
     background-color: #222;
-    gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
 }
 
 .book-and-rates {
     display: flex;
-    gap: 30px;
+    gap: 15px;
 }
 
 .rate-on-request {
@@ -70,4 +71,41 @@ header nav {
 
 .rate-on-request:hover {
     color: white;
+}
+
+.welcome-container {
+    background-image: url('/images/welcome-background.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-style: italic;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px black;
+    gap: 20px;
+    padding: 20vh 22vw;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.main-logo {
+    height: 86px;
+    object-fit: contain;
+    margin-bottom: 35px;
+}
+
+.welcome-container p {
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+}
+
+.welcome-title {
+    font-size: 2.188rem;
+    font-weight: inherit;
+    letter-spacing: 0.125rem;
 }
