@@ -83,6 +83,10 @@ header nav {
     color: white;
 }
 
+main {
+    padding: 8vh 2vw;
+}
+
 .welcome-container {
     background-image: url('./images/welcome-background.jpg');
     background-size:cover;
@@ -118,4 +122,29 @@ header nav {
     font-size: 2.188rem;
     font-weight: inherit;
     letter-spacing: 0.125rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: rgb(51, 51, 51);
+    border-bottom: 1px solid #ccc;
+    min-width: 60%;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.the-hotel p,
+.localization p {
+    color: rgb(85, 85, 85);
+    font-weight: 300;
+    margin: 2.5em;
+    line-height: 1.75em;
 }

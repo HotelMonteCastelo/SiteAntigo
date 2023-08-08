@@ -27,6 +27,14 @@
         justify-content: center;
         align-items: center;
     }
+
+    main {
+        padding: 8vh 5vw;
+    }
+
+    h2 {
+        min-width: 40%;
+    }
 }
 
 @media (min-width: 1380px) {
