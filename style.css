@@ -148,3 +148,14 @@ h2 {
     margin: 2.5em;
     line-height: 1.75em;
 }
+
+.surroundings-description {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.surroundings-description p {
+    margin: 1em;
+
+}
