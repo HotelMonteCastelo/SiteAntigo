@@ -3,9 +3,12 @@
 <head>
     <link href="reset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <link href="desktop.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,7 +51,7 @@
             </div>
         </nav>
     </header>
-    <div class="welcome-container container">
+    <div class="welcome-container">
         <img class="main-logo" src="./images/logo.png">
         <h3 class ="welcome-title">Bem-vindo</h3>
         <p>
@@ -69,24 +72,26 @@
         </div>
         <div class="localization container">
             <h2>LOCALIZAÇÃO</h2>
-            <p>
-                Em localização estratégica, a 10 minutos do aeroporto Santos Dummont, o Hotel Monte Castelo está situado na zona sul
-                da cidade do Rio de Janeiro, entre o centro financeiro e os principais pontos turísticos da cidade.
-            </p>
-            <p>
-                A estação de metrô ao lado do hotel permite rápido acesso as principais praias da cidade, assim como ao Porto Maravilha,
-                onde está o Museu do Amanhã e o MAR- Museu de Arte do Rio. Esteja próximo também ao Corcovado, Pâo de Açúcar e ao Sambódromo,
-                local de desfiles das escolas de samba.
-            </p>
-            <p>
-                Com uma curta caminhada acesse o MAM-Museu de Arte Moderna, o Teatro Municipal, a LAPA-“point” noturno da cidade,
-                a renovada Marina da Glória, o bucólico reduto cultural de Santa Teresa,
-                além de estar ao lado da maior concentração de embaixadas e consulados na cidade.
-                Venha viver a experiência de estar próximo ao que o Rio de Janeiro tem de melhor.
-            </p>
+            <section class="surroundings-description">
+                <p class="p1">
+                    Em localização estratégica, a 10 minutos do aeroporto Santos Dummont, o Hotel Monte Castelo está situado na zona sul
+                    da cidade do Rio de Janeiro, entre o centro financeiro e os principais pontos turísticos da cidade.
+                </p>
+                <p class="p2">
+                    Com uma curta caminhada acesse o MAM-Museu de Arte Moderna, o Teatro Municipal, a LAPA-“point” noturno da cidade,
+                    a renovada Marina da Glória, o bucólico reduto cultural de Santa Teresa,
+                    além de estar ao lado da maior concentração de embaixadas e consulados na cidade.
+                    Venha viver a experiência de estar próximo ao que o Rio de Janeiro tem de melhor.
+                </p>
+                <p class="p3">
+                    A estação de metrô ao lado do hotel permite rápido acesso as principais praias da cidade, assim como ao Porto Maravilha,
+                    onde está o Museu do Amanhã e o MAR- Museu de Arte do Rio. Esteja próximo também ao Corcovado, Pâo de Açúcar e ao Sambódromo,
+                    local de desfiles das escolas de samba.
+                </p>
+            </section>
             <section class="how-to-come-and-go">
                 <div class="container">
-                    <img src="">
+                    <img src="./images/christ.jpg">
                     <h4>Como chegar</h4>
                     <ul>
                         <li>
@@ -107,7 +112,7 @@
                     </ul>
                 </div>
                 <div>
-                    <img src="">
+                    <img src="./images/sugar-loaf.jpg">
                     <h4>Como sair</h4>
                     <ul>
                         <li>
@@ -125,7 +130,7 @@
                     </ul>
                 </div>
                 <div class="container">
-                    <img src="">
+                    <img src="./images/bondinho.jpg">
                     <h4>Como chegar nos Pontos Turísticos</h4>
                     <ul>
                         <li>SAMBÓDROMO</li>
@@ -163,12 +168,12 @@
         <div class="hotel-accomodations container">
             <H2>ACOMODAÇÕES</H2>
             <section class="hotel-photos">
-                <img src="">
-                <img src="">
-                <img src="">
-                <img src="">
-                <img src="">
-                <img src="">
+                <img src="./images/accomodation01.jpg">
+                <img src="./images/accomodation02.jpg">
+                <img src="./images/accomodation03.jpg">
+                <img src="./images/accomodation04.jpg">
+                <img src="./images/accomodation05.jpg">
+                <img src="./images/accomodation06.jpg">
             </section>
             <p>
                 Todos os quartos são equipados com TV LED 32´, ar-condicionado, acesso à internet wi-fi de alta velocidade gratuito,
@@ -195,7 +200,7 @@
                 O estabelecimento é o resultado de grande esforço desde 2002 de seus proprietários Valterson e Mercedes Botelho,
                 foto abaixo, e ainda administrado pela família.
             </p>
-            <img src="">
+            <img src="./images/missao.jpg">
         </div>
         <div class="about-rio-de-janeiro container">
             <h2>RIO DE JANEIRO</h2>
@@ -221,30 +226,30 @@
             </p>
         </div>
         <div class="container photos">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
+            <img src="./images/01.jpg">
+            <img src="./images/02.jpg">
+            <img src="./images/03.jpg">
+            <img src="./images/04.jpg">
+            <img src="./images/05.jpg">
+            <img src="./images/06.jpg">
+            <img src="./images/07.jpg">
+            <img src="./images/08.jpg">
+            <img src="./images/09.jpg">
+            <img src="./images/10.jpg">
+            <img src="./images/11.jpg">
+            <img src="./images/12.jpg">
+            <img src="./images/13.jpg">
+            <img src="./images/14.jpg">
+            <img src="./images/15.jpg">
+            <img src="./images/paodeacucar.jpg">
+            <img src="./images/selaron.jpg">
+            <img src="./images/enseada2.jpg">
+            <img src="./images/praia1.jpg">
+            <img src="./images/plage.jpg">
+            <img src="./images/carnaval.jpg">
+            <img src="./images/aterro.jpg">
+            <img src="./images/steresa.jpg">
+            <img src="./images/copa.jpg">
         </div>
         <div class="contact-banner">
             <h2>HOTEL MONTE CASTELO</h2>
