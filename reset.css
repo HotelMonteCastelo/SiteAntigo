@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: inherit;
+}
+
+html {
     font-family: 'Lato', sans-serif;
 }
 

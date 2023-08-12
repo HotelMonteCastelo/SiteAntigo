@@ -50,6 +50,10 @@
         grid-column: 2;
         grid-row: 1 / 3;
     }
+
+    .how-to-come-and-go img {
+        width: 192.5px;
+    }
 }
 
 
