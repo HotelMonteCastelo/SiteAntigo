@@ -91,15 +91,6 @@
     }
 }
 
-
-@media (min-width: 1380px) {
-
-    html {
-        font-size: 1.2rem;
-    }
-}
-
-
 @media (max-width: 576px) {
     .welcome-container {
         gap: 1rem;
