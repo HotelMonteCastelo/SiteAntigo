@@ -1,5 +1,17 @@
+html {
+    overflow-x: hidden;
+}
+
 .hidden {
     display: none !important;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 1px solid red;
 }
 
 header nav {
@@ -124,12 +136,6 @@ main {
     letter-spacing: 0.125rem;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 2.25rem;
@@ -158,4 +164,85 @@ h2 {
 .surroundings-description p {
     margin: 1em;
 
+}
+
+.how-to-come-and-go {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway';
+}
+
+.how-to-come-and-go .container {
+    background-color: #f2f2f2;
+    margin-top: 10px;
+    border: 1px solid rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.how-to-come-and-go .content {
+    margin-left: 1em;
+}
+
+.image-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 193px;
+    width: 100%;
+}
+
+.image-christ {
+    background-image: url('./images/christ.jpg');
+}
+
+.image-sugar-loaf {
+    background-image: url('./images/sugar-loaf.jpg');
+}
+
+.image-bondinho {
+    background-image: url('./images/bondinho.jpg');
+}
+
+.how-to-come-and-go h4 {
+    font-size: 1.875rem;
+    font-weight: 300;
+    color: #333;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.how-to-come-and-go li {
+    font-size: 0.688em;
+    line-height: 2em;
+    color: rgb(52, 152, 219);
+}
+
+.map-banner {
+    background-image: url('./images/map.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    min-height: 244px;
+    max-height: 450px;
+    margin-top: 50px;
+}
+
+.map-and-locations ol {
+    width: calc(100% + 2vw);
+    border: 1px solid red;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #555;
+}
+
+.map-and-locations li {
+    margin-right: 2em;
 }
