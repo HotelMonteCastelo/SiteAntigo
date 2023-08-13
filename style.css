@@ -6,6 +6,14 @@ html {
     display: none !important;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 1px solid red;
+}
+
 header nav {
     background-color: #222;
     height: 12vh;
@@ -128,13 +136,6 @@ main {
     letter-spacing: 0.125rem;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
 h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 2.25rem;
@@ -229,4 +230,19 @@ h2 {
     min-height: 244px;
     max-height: 450px;
     margin-top: 50px;
+}
+
+.map-and-locations ol {
+    width: calc(100% + 2vw);
+    border: 1px solid red;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #555;
+}
+
+.map-and-locations li {
+    margin-right: 2em;
 }
