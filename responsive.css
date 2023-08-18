@@ -38,6 +38,10 @@
     h2 {
         min-width: 40%;
     }
+
+    .hotel-mission {
+        padding: 40px 7vw 15px 7vw;
+    }
 }
 
 @media (min-width: 900px) {
