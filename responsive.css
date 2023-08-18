@@ -37,6 +37,19 @@
     }
 }
 
+@media (min-width: 900px) {
+
+    .hotel-photos .row {
+        display: flex;
+    }
+
+    .hotel-photos img {
+        width: 33%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
 
 @media (min-width: 1200px) {
 
