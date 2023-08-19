@@ -22,26 +22,26 @@
                 <div class="menu-controller">MENU</div>
                 <ul class="website-shortcuts">
                     <li>
-                        <a>O Hotel</a>
+                        <a href="#welcome-container">O Hotel</a>
                     </li>
                     <li>
-                        <a>Nossa missão</a>
+                        <a href="#hotel-mission">Nossa missão</a>
                     </li>
                     <li>
-                        <a href="">Acomodações</a>
+                        <a href="#hotel-accomodations">Acomodações</a>
                     </li>
                     <li>
-                        <a href="">Localização</a>
+                        <a href="#localization">Localização</a>
                     </li>
                     <li>    
-                        <a href="">Fotos</a>
+                        <a href="#photos">Fotos</a>
                     </li>
                     <li>
-                        <a href="">Fale Conosco</a>
+                        <a href="#ending">Fale Conosco</a>
                     </li>
                     <li>
                         <strong>
-                            <a href="" class="book-and-rates">
+                            <a href="#form" class="book-and-rates">
                                 <span class="book">RESERVE AQUI</span>
                                 <span class="rate-on-request">(tarifa sob consulta)</span>
                             </a>
@@ -51,7 +51,7 @@
             </div>
         </nav>
     </header>
-    <div class="welcome-container">
+    <div id="welcome-container" class="welcome-container">
         <img class="main-logo" src="./images/logo.png">
         <h3 class ="welcome-title">Bem-vindo</h3>
         <p>
@@ -70,7 +70,7 @@
                 acesso a bares, restaurantes, supermercados, bancos e farmácias. No momento não estamos oferecendo café-da-manhã.
             </p>
         </div>
-        <div class="localization container">
+        <div id="localization" class="localization container">
             <h2>LOCALIZAÇÃO</h2>
             <section class="surroundings-description">
                 <p class="p1">
@@ -161,29 +161,33 @@
         <div class="map-and-locations container">
             <div class="map-banner"></div>
             <ol>
-                <li>Parque das Ruinas</li>
-                <li>Museu Chácara do Céu</li>
-                <li>MAM</li>
-                <li>Teatro Municipal</li>
-                <li>Marina da Glória</li>
-                <li>Consulado dos EUA</li>
-                <li>Consulado da Suíça</li>
-                <li>Aeroporto SDU</li>
-                <li>Porto Maravilha</li>
-                <li>Museu da República</li>
-                <li>Biblioteca Nacional</li>
-                <li>Lapa</li>
+                <li data-custom-list="1.">Parque das Ruinas</li>
+                <li data-custom-list="2.">Museu Chácara do Céu</li>
+                <li data-custom-list="3.">MAM</li>
+                <li data-custom-list="4.">Teatro Municipal</li>
+                <li data-custom-list="5.">Marina da Glória</li>
+                <li data-custom-list="6.">Consulado dos EUA</li>
+                <li data-custom-list="7.">Consulado da Suíça</li>
+                <li data-custom-list="8.">Aeroporto SDU</li>
+                <li data-custom-list="9.">Porto Maravilha</li>
+                <li data-custom-list="10.">Museu da República</li>
+                <li data-custom-list="11.">Biblioteca Nacional</li>
+                <li data-custom-list="12.">Lapa</li>
             </ol>
         </div>
-        <div class="hotel-accomodations container">
+        <div id="hotel-accomodations" class="hotel-accomodations container">
             <H2>ACOMODAÇÕES</H2>
             <section class="hotel-photos">
-                <img src="./images/accomodation01.jpg">
-                <img src="./images/accomodation02.jpg">
-                <img src="./images/accomodation03.jpg">
-                <img src="./images/accomodation04.jpg">
-                <img src="./images/accomodation05.jpg">
-                <img src="./images/accomodation06.jpg">
+                <div class="row">
+                    <img src="./images/accomodation01.jpg">
+                    <img src="./images/accomodation02.jpg">
+                    <img src="./images/accomodation03.jpg">
+                </div>
+                <div class="row">
+                    <img src="./images/accomodation04.jpg">
+                    <img src="./images/accomodation05.jpg">
+                    <img src="./images/accomodation06.jpg">
+                </div>
             </section>
             <p>
                 Todos os quartos são equipados com TV LED 32´, ar-condicionado, acesso à internet wi-fi de alta velocidade gratuito,
@@ -191,7 +195,7 @@
             </p>
             <p>A imagem ilustra o quarto muito fielmente mas pode haver alguma mudança.</p>
         </div>
-        <div class="hotel-mission container">
+        <div id="hotel-mission" class="hotel-mission container">
             <h2>Nossa Missão</h2>
             <p>
                 O objetivo do Hotel é o de proporcionar uma estadia onde o hóspede se sinta como estivesse em sua casa, com todo o conforto.
@@ -235,38 +239,41 @@
                 Que o Hotel Monte Castelo possa ser sua casa no Rio de Janeiro.
             </p>
         </div>
-        <div class="container photos">
-            <img src="./images/01.jpg">
-            <img src="./images/02.jpg">
-            <img src="./images/03.jpg">
-            <img src="./images/04.jpg">
-            <img src="./images/05.jpg">
-            <img src="./images/06.jpg">
-            <img src="./images/07.jpg">
-            <img src="./images/08.jpg">
-            <img src="./images/09.jpg">
-            <img src="./images/10.jpg">
-            <img src="./images/11.jpg">
-            <img src="./images/12.jpg">
-            <img src="./images/13.jpg">
-            <img src="./images/14.jpg">
-            <img src="./images/15.jpg">
-            <img src="./images/paodeacucar.jpg">
-            <img src="./images/selaron.jpg">
-            <img src="./images/enseada2.jpg">
-            <img src="./images/praia1.jpg">
-            <img src="./images/plage.jpg">
-            <img src="./images/carnaval.jpg">
-            <img src="./images/aterro.jpg">
-            <img src="./images/steresa.jpg">
-            <img src="./images/copa.jpg">
+        <div id="photos" class="container photos">
+            <h2>FOTOS</h2>
+            <section>
+                <img src="./images/01.jpg">
+                <img src="./images/02.jpg">
+                <img src="./images/03.jpg">
+                <img src="./images/04.jpg">
+                <img src="./images/05.jpg">
+                <img src="./images/06.jpg">
+                <img src="./images/07.jpg">
+                <img src="./images/08.jpg">
+                <img src="./images/09.jpg">
+                <img src="./images/10.jpg">
+                <img src="./images/11.jpg">
+                <img src="./images/12.jpg">
+                <img src="./images/13.jpg">
+                <img src="./images/14.jpg">
+                <img src="./images/15.jpg">
+                <img src="./images/paodeacucar.jpg">
+                <img src="./images/selaron.jpg">
+                <img src="./images/enseada2.jpg">
+                <img src="./images/praia1.jpg">
+                <img src="./images/plage.jpg">
+                <img src="./images/carnaval.jpg">
+                <img src="./images/aterro.jpg">
+                <img src="./images/steresa.jpg">
+                <img src="./images/copa.jpg">
+            </section>
         </div>
-        <div class="contact-banner">
+        <div class="contact-banner container">
             <h2>HOTEL MONTE CASTELO</h2>
             <p>Rua Cândido Mendes, 201 - Glória - Rio de Janeiro/RJ</p>
             <p>+55 (21) 3563-5222</p>
         </div>
-        <div class="container form">
+        <div id="form" class="container form">
             <h2>FORMULÁRIO DE RESERVA</h2>
             <form>
                 <div class="input-title-container">
@@ -310,7 +317,7 @@
                 <button></button>
             </form>
         </div>
-        <div class="container ending">
+        <div id="ending" class="container ending">
             <h2>OBRIGADO PELA VISITA</h2>
             <section>
                 <h4>Informações de contato</h4>

@@ -1,5 +1,6 @@
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .hidden {
@@ -14,6 +15,12 @@ html {
     border: 1px solid red;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
 header nav {
     background-color: #222;
     height: 12vh;
@@ -22,8 +29,6 @@ header nav {
     color: white;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
-    position: fixed;
     gap: 1.875rem;
     font-weight: 300;
     border-bottom: 1px solid black;
@@ -97,6 +102,9 @@ header nav {
 
 main {
     padding: 8vh 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .welcome-container {
@@ -234,15 +242,148 @@ h2 {
 
 .map-and-locations ol {
     width: calc(100% + 2vw);
-    border: 1px solid red;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     font-weight: 300;
     font-size: 1rem;
     color: #555;
+    margin-top: 1rem;
+    list-style: none;
+    width: 105%;
+    padding: 0;
 }
 
-.map-and-locations li {
+.map-and-locations ol li {
     margin-right: 2em;
+    margin-bottom: 0.5rem;
+}
+
+.map-and-locations ol li:before {
+    content: counter(custom-li);
+    font-weight: 600;
+    margin-right: 0.5em;
+    content: attr(data-custom-list);
+}
+
+.hotel-accomodations {
+    padding: 0;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+.hotel-photos {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+}
+
+.hotel-photos .row {
+    overflow: hidden;
+}
+
+.hotel-photos img {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 705px;
+    transition: 0.4s;
+}
+
+.hotel-photos img:hover {
+    transform: translateY(-30px);
+}
+
+.hotel-accomodations p {
+    color: rgb(85, 85, 85);
+    font-weight: 300;
+    width: 90%;
+    margin-bottom: 25px;
+}
+
+.hotel-mission,
+.about-rio-de-janeiro {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 2vw 15px 2vw;
+}
+
+.hotel-mission {
+    background-image: url(./images/nossamissao.jpg);
+}
+
+.hotel-mission h2,
+.about-rio-de-janeiro h2 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px #979890;
+    color: white;
+    align-self: center;
+}
+
+.hotel-mission p,
+.about-rio-de-janeiro p {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 300;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 1.35em;
+}
+
+.hotel-mission img {
+    max-width: 100%;
+    margin: 5px;
+}
+
+.about-rio-de-janeiro {
+    background-image: url(./images/divider4.jpg);
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.about-rio-de-janeiro p {
+    text-shadow: 1px 1px #979890;
+}
+
+.photos h2 {
+    margin: 50px auto;
+}
+
+.photos section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photos section img {
+    margin: 10px auto;
+}
+
+.contact-banner {
+    background-image: url(./images/divider6.jpg);
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 2vw 15px 2vw;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.contact-banner h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.contact-banner p {
+    font-size: 1.563rem;
+    font-weight: 300;
+    margin: 15px auto;
 }
