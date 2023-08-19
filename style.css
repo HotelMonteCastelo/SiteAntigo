@@ -302,8 +302,8 @@ h2 {
     margin-bottom: 25px;
 }
 
-.hotel-mission {
-    background-image: url(./images/nossamissao.jpg);
+.hotel-mission,
+.about-rio-de-janeiro {
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
@@ -311,13 +311,20 @@ h2 {
     padding: 40px 2vw 15px 2vw;
 }
 
-.hotel-mission h2 {
+.hotel-mission {
+    background-image: url(./images/nossamissao.jpg);
+}
+
+.hotel-mission h2,
+.about-rio-de-janeiro h2 {
     font-size: 2.5rem;
     text-shadow: 1px 1px #979890;
     color: white;
+    align-self: center;
 }
 
-.hotel-mission p {
+.hotel-mission p,
+.about-rio-de-janeiro p {
     font-size: 1.25rem;
     color: white;
     font-weight: 300;
@@ -329,4 +336,13 @@ h2 {
 .hotel-mission img {
     max-width: 100%;
     margin: 5px;
+}
+
+.about-rio-de-janeiro {
+    background-image: url(./images/divider4.jpg);
+    align-items: flex-start;
+}
+
+.about-rio-de-janeiro p {
+    text-shadow: 1px 1px #979890;
 }

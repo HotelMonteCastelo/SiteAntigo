@@ -39,7 +39,8 @@
         min-width: 40%;
     }
 
-    .hotel-mission {
+    .hotel-mission,
+    .about-rio-de-janeiro {
         padding: 40px 7vw 15px 7vw;
     }
 }
