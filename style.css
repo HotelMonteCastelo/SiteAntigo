@@ -363,3 +363,26 @@ h2 {
 .photos section img {
     margin: 10px auto;
 }
+
+.contact-banner {
+    background-image: url(./images/divider6.jpg);
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 2vw 15px 2vw;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.contact-banner h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.contact-banner p {
+    font-size: 1.563rem;
+    font-weight: 300;
+    margin: 15px auto;
+}
