@@ -341,8 +341,25 @@ h2 {
 .about-rio-de-janeiro {
     background-image: url(./images/divider4.jpg);
     align-items: flex-start;
+    margin-top: 50px;
 }
 
 .about-rio-de-janeiro p {
     text-shadow: 1px 1px #979890;
+}
+
+.photos h2 {
+    margin: 50px auto;
+}
+
+.photos section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photos section img {
+    margin: 10px auto;
 }
