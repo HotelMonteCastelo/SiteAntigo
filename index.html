@@ -41,7 +41,7 @@
                     </li>
                     <li>
                         <strong>
-                            <a href="#form" class="book-and-rates">
+                            <a href="#booking-form" class="book-and-rates">
                                 <span class="book">RESERVE AQUI</span>
                                 <span class="rate-on-request">(tarifa sob consulta)</span>
                             </a>
@@ -273,47 +273,53 @@
             <p>Rua Cândido Mendes, 201 - Glória - Rio de Janeiro/RJ</p>
             <p>+55 (21) 3563-5222</p>
         </div>
-        <div id="form" class="container form">
+        <div id="booking-form" class="container booking-form">
             <h2>FORMULÁRIO DE RESERVA</h2>
             <form>
-                <div class="input-title-container">
-                    <span>Nome</span>
-                    <input>
+                <div class="column">
+                    <div class="input-title-wrapper">
+                        <label for="name-input">Nome</label>
+                        <input placeholder="Seu nome" type="text" id="name-input" name="name-input">
+                    </div>
+                    <div class="input-title-wrapper">
+                        <label for="email-input">E-mail</label>
+                        <input placeholder="Seu-email" type="email" id="email-input" name="email-input">
+                    </div>
+                    <div class="input-title-wrapper">
+                        <label for="city-input">Cidade</label>
+                        <input placeholder="Sua cidade" type="text" id="city-input" name="city-input">
+                    </div>
+                    <div class="input-title-wrapper">
+                        <label for="country-input">País</label>
+                        <input placeholder="Seu país" type="text" id="country-input" name="country-input">
+                    </div>
+                    <div class="input-title-wrapper">
+                        <label for="telephone-input">Telefone</label>
+                        <input placeholder="Seu telefone" type="tel" id="telephone-input" name="telephone-input">
+                    </div>
                 </div>
-                <div class="input-title-container">
-                    <span>E-mail</span>
-                    <input>
+                <div class="column">
+                    <div class="input-title-wrapper">
+                        <label for="-input">Datas</label>
+                        <input placeholder="Check-in" type="text" onfocus="(this.type='date')"
+                        onblur="(this.type='text')" id="-input" name="-input">
+                        <input placeholder="Check-out" type="text" onfocus="(this.type='date')"
+                        onblur="(this.type='text')" id="-input" name="-input">
+                    </div>
+                    <div class="input-title-wrapper">
+                        <label for="-input">Cama</label>
+                        <input placeholder="" type="" id="-input" name="-input">
+                    </div>
+                    <div class="input-title-wrapper">
+                        <label for="-input">Hóspedes</label>
+                        <input placeholder="" type="" id="-input" name="-input">
+                    </div>
+                    <div class="input-title-wrapper">
+                        <label>Horário</label>
+                        <input placeholder="Qual o seu horário (aproximado) de chegada?" type="" id="-input" name="-input">
+                    </div>
+                    <div class="recaptcha"></div>
                 </div>
-                <div class="input-title-container">
-                    <span>Cidade</span>
-                    <input>
-                </div>
-                <div class="input-title-container">
-                    <span>País</span>
-                    <input>
-                </div>
-                <div class="input-title-container">
-                    <span>Telefone</span>
-                    <input>
-                </div>
-                <div class="input-title-container">
-                    <span>Datas</span>
-                    <input>
-                    <input>
-                </div>
-                <div class="input-title-container">
-                    <span>Cama</span>
-                    <input>
-                </div>
-                <div class="input-title-container">
-                    <span>Hóspedes</span>
-                    <input>
-                </div>
-                <div class="input-title-container">
-                    <span>Horário</span>
-                    <input>
-                </div>
-                <div class="recaptcha"></div>
                 <button></button>
             </form>
         </div>
