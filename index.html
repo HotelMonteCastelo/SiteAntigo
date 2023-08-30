@@ -276,51 +276,61 @@
         <div id="booking-form" class="container booking-form">
             <h2>FORMULÁRIO DE RESERVA</h2>
             <form>
-                <div class="column">
-                    <div class="input-title-wrapper">
-                        <label for="name-input">Nome</label>
-                        <input placeholder="Seu nome" type="text" id="name-input" name="name-input">
+                <div class="columns-box">
+
+                    <div class="column">
+                        <div class="input-title-wrapper">
+                            <label for="name-input">Nome</label>
+                            <input placeholder="Seu nome" type="text" id="name-input" name="name-input">
+                        </div>
+                        <div class="input-title-wrapper">
+                            <label for="email-input">E-mail</label>
+                            <input placeholder="Seu-email" type="email" id="email-input" name="email-input">
+                        </div>
+                        <div class="input-title-wrapper">
+                            <label for="city-input">Cidade</label>
+                            <input placeholder="Sua cidade" type="text" id="city-input" name="city-input">
+                        </div>
+                        <div class="input-title-wrapper">
+                            <label for="country-input">País</label>
+                            <input placeholder="Seu país" type="text" id="country-input" name="country-input">
+                        </div>
+                        <div class="input-title-wrapper">
+                            <label for="telephone-input">Telefone</label>
+                            <input placeholder="Seu telefone" type="tel" id="telephone-input" name="telephone-input">
+                        </div>
                     </div>
-                    <div class="input-title-wrapper">
-                        <label for="email-input">E-mail</label>
-                        <input placeholder="Seu-email" type="email" id="email-input" name="email-input">
-                    </div>
-                    <div class="input-title-wrapper">
-                        <label for="city-input">Cidade</label>
-                        <input placeholder="Sua cidade" type="text" id="city-input" name="city-input">
-                    </div>
-                    <div class="input-title-wrapper">
-                        <label for="country-input">País</label>
-                        <input placeholder="Seu país" type="text" id="country-input" name="country-input">
-                    </div>
-                    <div class="input-title-wrapper">
-                        <label for="telephone-input">Telefone</label>
-                        <input placeholder="Seu telefone" type="tel" id="telephone-input" name="telephone-input">
+                    <div class="column">
+                        <div class="input-title-wrapper">
+                            <label for="checkin-input">Datas</label>
+                            <input placeholder="Check-in" type="text" onfocus="(this.type='date')"
+                            onblur="(this.type='text')" id="checkin-input" name="checkin-input">
+                            <input placeholder="Check-out" type="text" onfocus="(this.type='date')"
+                            onblur="(this.type='text')" id="checkout-input" name="checkout-input">
+                        </div>
+                        <div class="input-title-wrapper">
+                            <label for="bed-select">Cama</label>
+                            <select id="bed-select" name="bed-select">
+                                <option selected>Cama de casal (1)</option>
+                                <option>Camas de solteiro (2)</option>
+                            </select>
+                        </div>
+                        <div class="input-title-wrapper">
+                            <label for="guests-select">Hóspedes</label>
+                            <select id="guests-select" name="guests-select">
+                                <option selected>2</option>
+                                <option>1</option>
+                            </select>
+                        </div>
+                        <div class="input-title-wrapper">
+                            <label for="time-input"> Horário</label>
+                            <input placeholder="Qual o seu horário (aproximado) de chegada?"
+                            type="text" id="time-input" name="time-input">
+                        </div>
+                        <div class="recaptcha">RECAPCHA</div>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="input-title-wrapper">
-                        <label for="-input">Datas</label>
-                        <input placeholder="Check-in" type="text" onfocus="(this.type='date')"
-                        onblur="(this.type='text')" id="-input" name="-input">
-                        <input placeholder="Check-out" type="text" onfocus="(this.type='date')"
-                        onblur="(this.type='text')" id="-input" name="-input">
-                    </div>
-                    <div class="input-title-wrapper">
-                        <label for="-input">Cama</label>
-                        <input placeholder="" type="" id="-input" name="-input">
-                    </div>
-                    <div class="input-title-wrapper">
-                        <label for="-input">Hóspedes</label>
-                        <input placeholder="" type="" id="-input" name="-input">
-                    </div>
-                    <div class="input-title-wrapper">
-                        <label>Horário</label>
-                        <input placeholder="Qual o seu horário (aproximado) de chegada?" type="" id="-input" name="-input">
-                    </div>
-                    <div class="recaptcha"></div>
-                </div>
-                <button></button>
+                <button class="btn-form">Concluir</button>
             </form>
         </div>
         <div id="ending" class="container ending">

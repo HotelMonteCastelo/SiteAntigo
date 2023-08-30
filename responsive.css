@@ -117,6 +117,52 @@
     .how-to-come-and-go .ul-section-right {
         float: right;
     }
+
+    .booking-form .columns-box,
+    .booking-form .input-title-wrapper {
+        flex-direction: row;
+    }
+
+    .booking-form form {
+        align-items: flex-start;
+    }
+
+    .booking-form .column {
+        width: 585px;
+    }
+
+    .booking-form .input-title-wrapper {
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .booking-form label {
+        width: 140px;
+        margin: 0;
+        text-align: end;
+        padding-right: 15px;
+    }
+
+    input,
+    select {
+        width:408px;
+        height: 34px;
+    }
+
+    #checkin-input,
+    #checkout-input {
+        width: 116px;
+    }
+
+    #checkout-input {
+        margin-left: 25px;
+    }
+
+    .btn-form {
+        align-self: center;
+        width: fit-content;
+    }
 }
 
 @media (max-width: 576px) {

@@ -398,12 +398,31 @@ h2 {
 
 .booking-form form {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-form .columns-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-form .column {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .booking-form .input-title-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
+    
 }
 
 .booking-form label {
@@ -414,13 +433,15 @@ h2 {
 
 }
 
-input {
+input,
+select {
     border: 1px solid rgb( 204, 204, 204);
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px 0px inset;
     font-size: 0.875rem;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     padding: 6px 12px;
+    max-width: 700px;
 }
 
 ::-webkit-input-placeholder {
@@ -435,8 +456,28 @@ input {
     color: rgb( 155, 155, 155);
   }
 
-input:focus {
+input:focus,
+select:focus {
     outline: none;
     border-color: rgb(60, 164, 224);
     box-shadow: 0 0 6px rgb(60, 164, 224);
+}
+
+.btn-form {
+    width: 100%;
+    max-width: 700px;
+    padding: 8px 15px;
+    border: none;
+    font-size: 0.875rem;
+    color: white;
+    background-color: rgb(92, 184, 92);
+    border-radius: 4px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.btn-form:hover,
+.btn-form:focus {
+    background-color: rgb(72, 164, 72);
+    outline: none;
 }
