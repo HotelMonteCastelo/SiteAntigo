@@ -154,6 +154,10 @@ h2 {
     padding: 0.5em;
 }
 
+#localization {
+    padding-top: 100px;
+}
+
 .the-hotel p,
 .localization p {
     color: rgb(85, 85, 85);
@@ -265,9 +269,12 @@ h2 {
     content: attr(data-custom-list);
 }
 
+#hotel-accomodations {
+    padding-top: 100px;
+}
+
 .hotel-accomodations {
     padding: 0;
-    margin-top: 60px;
     margin-bottom: 25px;
 }
 
@@ -300,6 +307,10 @@ h2 {
     font-weight: 300;
     width: 90%;
     margin-bottom: 25px;
+}
+
+#hotel-mission {
+    padding-top: 100px;
 }
 
 .hotel-mission,
@@ -348,8 +359,12 @@ h2 {
     text-shadow: 1px 1px #979890;
 }
 
+#photos {
+    padding-top: 100px;
+}
+
 .photos h2 {
-    margin: 50px auto;
+    margin-bottom: 50px;
 }
 
 .photos section {
@@ -387,8 +402,11 @@ h2 {
     margin: 15px auto;
 }
 
+#booking-form {
+    padding-top: 100px;
+}
+
 .booking-form {
-    margin-top: 150px;
     width: 100%;
 }
 
@@ -403,14 +421,14 @@ h2 {
     align-items: center;
 }
 
-.booking-form .columns-box {
+.columns-box {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.booking-form .column {
+.column {
     width: 100%;
     max-width: 700px;
     display: flex;
@@ -434,6 +452,7 @@ h2 {
 }
 
 input,
+textarea,
 select {
     border: 1px solid rgb( 204, 204, 204);
     border-radius: 4px;
@@ -444,11 +463,13 @@ select {
     max-width: 700px;
 }
 
-::-webkit-input-placeholder {
+::-webkit-input-placeholder,
+::-webkit-textarea-placeholder {
     color: rgb( 155, 155, 155);
   }
   
-  :-ms-input-placeholder {
+  :-ms-input-placeholder,
+  :-ms-textarea-placeholder {
     color: rgb( 155, 155, 155);
   }
   
@@ -457,7 +478,8 @@ select {
   }
 
 input:focus,
-select:focus {
+select:focus,
+textarea:focus {
     outline: none;
     border-color: rgb(60, 164, 224);
     box-shadow: 0 0 6px rgb(60, 164, 224);
@@ -480,4 +502,48 @@ select:focus {
 .btn-form:focus {
     background-color: rgb(72, 164, 72);
     outline: none;
+}
+
+.ending {
+    font-size: 0.875rem;
+    color: rgb(51, 51, 51);
+    padding-top: 100px;
+}
+
+.ending h2 {
+    margin-bottom: 55px;
+}
+
+.ending h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ending .column {
+    align-items: flex-start;
+}
+
+.ending .contact-info-piece {
+    margin: 2px 0;
+}
+
+.ending p {
+    margin-bottom: 25px;
+}
+
+.ending form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ending input {
+    height: 34px;
+    margin-bottom: 35px;
+}
+
+.ending textarea {
+    height: 94px;
 }

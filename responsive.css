@@ -118,16 +118,20 @@
         float: right;
     }
 
-    .booking-form .columns-box,
+    .columns-box,
     .booking-form .input-title-wrapper {
         flex-direction: row;
+    }
+
+    .columns-box {
+        align-items: flex-start;
     }
 
     .booking-form form {
         align-items: flex-start;
     }
 
-    .booking-form .column {
+    .column {
         width: 585px;
     }
 
@@ -145,7 +149,8 @@
     }
 
     input,
-    select {
+    select,
+    textarea {
         width:408px;
         height: 34px;
     }
