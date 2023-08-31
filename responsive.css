@@ -50,6 +50,11 @@
     .about-rio-de-janeiro {
         padding: 40px 7vw 15px 7vw;
     }
+
+    footer section {
+        flex-direction: row;
+        gap: 25px;
+    }
 }
 
 @media (min-width: 900px) {
